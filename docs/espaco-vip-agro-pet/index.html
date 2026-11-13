@@ -2,26 +2,96 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Espaço VIP Agro Pet · Ceilândia - DF</title>
 <meta name="description" content="Carinho e cuidado com o seu pet, pertinho de você"><meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
 <style>
-:root{--c:#2e7d32}*{box-sizing:border-box;margin:0}body{font-family:system-ui,sans-serif;color:#222;background:#fff;line-height:1.5}
-header{min-height:80vh;display:flex;flex-direction:column;justify-content:center;padding:32px 20px;color:#fff;text-align:center;
-background:linear-gradient(#000a,#000c),url(https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=1400&q=70) center/cover}
-h1{font-size:clamp(2rem,7vw,3.6rem)}header p{font-size:1.2rem;opacity:.9;margin:8px 0 24px}
-.btn{display:inline-block;background:#25d366;color:#fff;padding:14px 28px;border-radius:40px;font-weight:700;text-decoration:none;font-size:1.1rem}
-section{max-width:900px;margin:auto;padding:48px 20px}h2{color:var(--c);margin-bottom:16px}
-ul{columns:2;padding-left:20px}li{margin:6px 0}.nota{font-weight:700;color:var(--c);margin-bottom:12px}
-blockquote{background:#f5f5f5;border-left:4px solid var(--c);padding:16px;margin:12px 0;border-radius:6px}cite{display:block;font-size:.9rem;color:#666;margin-top:6px}
-table{width:100%;border-collapse:collapse}td{padding:8px;border-bottom:1px solid #eee}
-iframe{width:100%;height:320px;border:0;border-radius:8px}footer{background:#111;color:#aaa;text-align:center;padding:24px;font-size:.9rem}
-.flut{position:fixed;right:16px;bottom:16px;width:60px;height:60px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 4px 12px #0004}
-@media(max-width:600px){ul{columns:1}}
+:root{--papel:#f7f9fa;--s1:#ecf0f2;--s2:#dbe3e7;--tinta:#1f3038;--suave:#4f5d64;--acento:#1f6b33;--m:clamp(16px,3vw,32px);
+--corpo:clamp(1.0625rem,1rem + .25vw,1.1875rem);--lead:clamp(1.25rem,1.1rem + .7vw,1.625rem);--peq:.875rem}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font:400 var(--corpo)/1.5 "Work Sans",system-ui,sans-serif;color:var(--tinta);background:var(--tinta);overflow-x:hidden}
+h1,h2,.placa b,.grande{font-family:Anton,Impact,sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:-.01em;line-height:.9}
+a{color:inherit}a:focus-visible,.btn:focus-visible{outline:3px solid var(--acento);outline-offset:3px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--acento);color:#fff;font-weight:600;text-decoration:none;
+padding:0 28px;height:56px;transition:transform .2s,filter .2s}.btn:hover{filter:brightness(1.12)}.btn:active{transform:scale(.97)}
+/* topo + capa */
+.topo{display:flex;justify-content:center;position:relative;padding:24px var(--m);color:var(--papel);font-weight:600}
+.topo a{position:absolute;right:var(--m);font-weight:400;text-decoration:none;opacity:.85}.topo a:hover{opacity:1}
+.capa{color:var(--papel);text-align:center;padding:clamp(48px,9vh,110px) var(--m) 0;min-height:100svh;display:flex;flex-direction:column}
+h1{margin:0 auto;max-width:14ch}h1.c{font-size:clamp(4rem,12vw,10rem)}h1.m{font-size:clamp(3rem,8.5vw,7.5rem);max-width:16ch}h1.l{font-size:clamp(2.4rem,6vw,5.5rem);max-width:20ch}
+.capa>p{font-size:var(--lead);max-width:34ch;margin:36px auto 0;opacity:.9}
+.pastas{width:min(86%,1100px);margin:auto auto 0;padding-top:72px}
+.pasta{height:56px;position:relative}.p0{background:var(--s2)}.p1{background:var(--s1)}.p2{background:#e3e9ec}
+.aba{position:absolute;top:-40px;height:40px;line-height:40px;padding:0 28px;background:inherit;color:var(--tinta);text-decoration:none;font-weight:600;font-size:1.0625rem;
+clip-path:polygon(14px 0,calc(100% - 14px) 0,100% 100%,0 100%);transition:transform .2s}.aba:hover{transform:translateY(-4px)}
+.frente{background:var(--papel);color:var(--tinta);padding:40px clamp(20px,4vw,48px) 56px;display:flex;flex-wrap:wrap;gap:32px;align-items:end;justify-content:space-between;text-align:left;
+clip-path:polygon(0 0,100% 0,100% 100%,0 100%)}
+.placa b{display:block;font-size:clamp(3.5rem,9vw,7rem);color:var(--acento)}.placa span{font-size:var(--lead)}
+/* serviços: folha de cardápio */
+.servicos{background:var(--s1);padding:clamp(80px,12vw,180px) var(--m)}
+.folha{background:var(--papel);max-width:640px;margin:auto;padding:72px clamp(20px,5vw,56px);clip-path:polygon(0.00% 14px,4.17% 0px,8.33% 14px,12.50% 0px,16.67% 14px,20.83% 0px,25.00% 14px,29.17% 0px,33.33% 14px,37.50% 0px,41.67% 14px,45.83% 0px,50.00% 14px,54.17% 0px,58.33% 14px,62.50% 0px,66.67% 14px,70.83% 0px,75.00% 14px,79.17% 0px,83.33% 14px,87.50% 0px,91.67% 14px,95.83% 0px,100.00% 14px,100.00% calc(100% - 14px),95.83% calc(100% - 0px),91.67% calc(100% - 14px),87.50% calc(100% - 0px),83.33% calc(100% - 14px),79.17% calc(100% - 0px),75.00% calc(100% - 14px),70.83% calc(100% - 0px),66.67% calc(100% - 14px),62.50% calc(100% - 0px),58.33% calc(100% - 14px),54.17% calc(100% - 0px),50.00% calc(100% - 14px),45.83% calc(100% - 0px),41.67% calc(100% - 14px),37.50% calc(100% - 0px),33.33% calc(100% - 14px),29.17% calc(100% - 0px),25.00% calc(100% - 14px),20.83% calc(100% - 0px),16.67% calc(100% - 14px),12.50% calc(100% - 0px),8.33% calc(100% - 14px),4.17% calc(100% - 0px),0.00% calc(100% - 14px))}
+h2{font-size:clamp(2.5rem,1.2rem + 5vw,4.5rem);margin-bottom:40px}.folha h2{text-align:center}
+.folha ul{list-style:none}.folha li{display:flex;align-items:baseline;gap:12px;margin:18px 0}
+.folha li span{flex:1;display:flex;align-items:baseline;gap:12px;font-size:1.1875rem}.folha li span::after{content:"";flex:1;border-bottom:4px dotted var(--s2)}
+.folha li a{font-weight:600;color:var(--acento);font-size:1rem}
+/* prova: cartão inclinado cortado pela borda */
+.prova{background:var(--acento);padding:clamp(80px,12vw,160px) var(--m) 0;overflow:hidden}
+.cartao{background:var(--papel);width:min(100%,720px);margin:auto;padding:clamp(28px,5vw,56px);padding-bottom:120px;transform:rotate(-1.5deg);text-align:center;margin-bottom:-60px}
+.cartao img{width:100%;height:auto;display:block;margin:0 0 32px}.grande{font-size:clamp(2rem,5vw,3.5rem);color:var(--acento);margin-bottom:24px}
+blockquote{font-size:1.25rem;margin:24px auto;max-width:40ch}cite{display:block;font-style:normal;color:var(--suave);font-size:1rem;margin-top:6px}
+.cartao p a{font-weight:600}
+/* onde: cartão de visita sobre o mapa */
+.onde{position:relative;background:var(--s1)}.onde iframe{display:block;width:100%;height:90svh;border:0;filter:grayscale(.35)}
+.visita{position:absolute;top:60px;right:var(--m);width:380px;background:var(--papel);padding:32px 32px 0;display:flex;flex-direction:column;gap:14px}
+.visita h2{font-size:2.25rem;margin:0}.visita table{border-collapse:collapse;font-variant-numeric:tabular-nums}.visita th{text-align:left;font-weight:400;padding:4px 16px 4px 0}.visita td{text-align:right}
+.visita .btn{margin:8px -32px 0;height:56px}
+/* rodapé: verso do cartão */
+footer{background:var(--tinta);padding:96px var(--m) 32px}
+.verso{background:var(--papel);max-width:1100px;margin:auto;padding:72px clamp(24px,5vw,64px) 24px;clip-path:polygon(0.00% 28px,8.33% 0px,16.67% 28px,25.00% 0px,33.33% 28px,41.67% 0px,50.00% 28px,58.33% 0px,66.67% 28px,75.00% 0px,83.33% 28px,91.67% 0px,100.00% 28px,100% 100%,0 100%);display:grid;grid-template-columns:1.2fr 1fr;gap:48px;position:relative}
+.verso h2{font-size:clamp(2.5rem,5vw,4rem);margin-bottom:20px}.verso address{font-style:normal;display:grid;gap:12px;font-size:1.125rem;align-content:start;padding-top:24px}
+.selo{position:absolute;right:clamp(24px,5vw,64px);top:40px;width:88px;padding:6px;background:var(--papel);transform:rotate(3deg)}.selo img{display:block;width:100%;height:auto}
+.imprenta{grid-column:1/-1;text-align:center;font-size:var(--peq);color:var(--suave)}
+.flut{position:fixed;right:16px;bottom:16px;width:60px;height:60px;border-radius:50%;background:#1f8f4e;display:grid;place-items:center;box-shadow:0 6px 18px #0005;z-index:9} /* taste-skill-ignore: botão flutuante */
+/* entrada */
+.js .sobe{opacity:0;transform:translateY(24px);transition:opacity .6s,transform .6s cubic-bezier(.2,.7,.2,1)}.js .sobe.ve{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.js .sobe{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+@media (max-width:700px){
+ .topo a{display:none}.pastas{width:100%}.aba{font-size:.9375rem;height:32px;line-height:32px;top:-32px;padding:0 18px}.pasta{height:48px}.ult{left:auto!important;right:4%}
+ .frente .btn{width:100%}.folha li span{font-size:1.0625rem}
+ .onde iframe{height:70svh}.visita{position:relative;top:auto;right:auto;width:auto;margin:-80px 16px 0}
+ .verso{grid-template-columns:1fr;clip-path:polygon(0.00% 24px,16.67% 0px,33.33% 24px,50.00% 0px,66.67% 24px,83.33% 0px,100.00% 24px,100% 100%,0 100%)}.selo{width:64px}.verso address{font-size:1.0625rem;padding-top:0}
+}
 </style></head><body>
-<header><h1>Espaço VIP Agro Pet</h1><p>Carinho e cuidado com o seu pet, pertinho de você</p>
-<div><a class="btn" href="https://wa.me/5561991690632?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Espa%C3%A7o%20VIP%20Agro%20Pet%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.">Chamar no WhatsApp</a></div></header>
-<section><h2>Serviços</h2><ul><li>Banho e tosa</li><li>Tosa higiênica</li><li>Rações das melhores marcas</li><li>Acessórios e brinquedos</li><li>Medicamentos e antipulgas</li><li>Atendimento pelo WhatsApp</li></ul></section>
-<section><h2>O que dizem nossos clientes</h2><p class="nota">★ 4,9 no Google · 32 avaliações</p></section>
-<section><h2>Onde estamos</h2><p>St. P QNP 16 - Ceilândia, Brasília - DF, 72231-422</p><br>
-<iframe loading="lazy" src="https://maps.google.com/maps?q=Espa%C3%A7o%20VIP%20Agro%20Pet%2C%20St.%20P%20QNP%2016%20-%20Ceil%C3%A2ndia%2C%20Bras%C3%ADlia%20-%20DF%2C%2072231-422&output=embed" title="Mapa"></iframe></section>
-<footer>Espaço VIP Agro Pet · Ceilândia - DF</footer>
-<a class="flut" href="https://wa.me/5561991690632?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Espa%C3%A7o%20VIP%20Agro%20Pet%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." aria-label="WhatsApp"><svg width="32" height="32" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.1.1.7-.1 1.3z"/></svg></a>
+<script>document.documentElement.className='js'</script>
+<header class="topo"><span>Espaço VIP Agro Pet</span><a href="#onde">Como chegar</a></header>
+<main>
+<section class="capa">
+<h1 class="m sobe">Espaço VIP Agro Pet</h1>
+<p class="sobe">Carinho e cuidado com o seu pet, pertinho de você</p>
+<nav class="pastas" aria-label="Seções"><div class="pasta p0"><a class="aba" style="left:8%" href="#servicos">Serviços</a></div><div class="pasta p1"><a class="aba" style="left:36%" href="#avaliacoes">Avaliações</a></div><div class="pasta p2"><a class="aba ult" style="left:64%" href="#onde">Onde estamos</a></div>
+<div class="frente"><div class="placa"><b>QNP 16</b><span>Ceilândia · DF</span></div>
+<a class="btn" href="https://wa.me/5561991690632?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Espa%C3%A7o%20VIP%20Agro%20Pet%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.">Chamar no WhatsApp</a></div></nav>
+</section>
+<section id="servicos" class="servicos"><div class="folha sobe"><h2>Serviços</h2><ul><li><span>Banho e tosa</span><a href="https://wa.me/5561991690632?text=Ol%C3%A1%21%20Queria%20saber%20sobre%20Banho%20e%20tosa.">Perguntar</a></li><li><span>Tosa higiênica</span><a href="https://wa.me/5561991690632?text=Ol%C3%A1%21%20Queria%20saber%20sobre%20Tosa%20higi%C3%AAnica.">Perguntar</a></li><li><span>Rações das melhores marcas</span><a href="https://wa.me/5561991690632?text=Ol%C3%A1%21%20Queria%20saber%20sobre%20Ra%C3%A7%C3%B5es%20das%20melhores%20marcas.">Perguntar</a></li><li><span>Acessórios e brinquedos</span><a href="https://wa.me/5561991690632?text=Ol%C3%A1%21%20Queria%20saber%20sobre%20Acess%C3%B3rios%20e%20brinquedos.">Perguntar</a></li><li><span>Medicamentos e antipulgas</span><a href="https://wa.me/5561991690632?text=Ol%C3%A1%21%20Queria%20saber%20sobre%20Medicamentos%20e%20antipulgas.">Perguntar</a></li><li><span>Atendimento pelo WhatsApp</span><a href="https://wa.me/5561991690632?text=Ol%C3%A1%21%20Queria%20saber%20sobre%20Atendimento%20pelo%20WhatsApp.">Perguntar</a></li></ul></div></section>
+
+<section id="avaliacoes" class="prova"><div class="cartao">
+<h2>Nota 4,9 no Google</h2>
+<img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=1200&h=675&fit=crop&q=70" width="1200" height="675" alt="" loading="lazy">
+<p class="grande">32 avaliações de clientes</p>
+
+<p><a href="https://www.google.com/maps/search/Espa%C3%A7o%20VIP%20Agro%20Pet%2C%20St.%20P%20QNP%2016%20-%20Ceil%C3%A2ndia%2C%20Bras%C3%ADlia%20-%20DF%2C%2072231-422">Ver todas no Google Maps</a></p>
+</div></section>
+<section id="onde" class="onde"><iframe loading="lazy" src="https://maps.google.com/maps?q=Espa%C3%A7o%20VIP%20Agro%20Pet%2C%20St.%20P%20QNP%2016%20-%20Ceil%C3%A2ndia%2C%20Bras%C3%ADlia%20-%20DF%2C%2072231-422&output=embed" title="Mapa até Espaço VIP Agro Pet"></iframe>
+<div class="visita sobe"><h2>Onde estamos</h2><p>St. P QNP 16 - Ceilândia, Brasília - DF, 72231-422</p>
+<p><a href="tel:+5561991690632">(61) 99169-0632</a></p>
+<a class="btn" href="https://www.google.com/maps/dir/?api=1&destination=Espa%C3%A7o%20VIP%20Agro%20Pet%2C%20St.%20P%20QNP%2016%20-%20Ceil%C3%A2ndia%2C%20Bras%C3%ADlia%20-%20DF%2C%2072231-422">Traçar rota</a></div></section>
+</main>
+<footer><div class="verso">
+<div><h2>Até já</h2><p>Atendemos pelo WhatsApp. Mande sua dúvida e respondemos assim que possível.</p></div>
+<address><a href="https://wa.me/5561991690632?text=Ol%C3%A1%21">WhatsApp (61) 99169-0632</a><a href="#onde">St. P QNP 16 - Ceilândia, Brasília - DF, 72231-422</a></address>
+<div class="selo"><img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=180&h=240&fit=crop&q=60" width="88" height="117" alt="" loading="lazy"></div>
+<p class="imprenta">© 2026 Espaço VIP Agro Pet · Fotos ilustrativas: Unsplash</p>
+</div></footer>
+<a class="flut" href="https://wa.me/5561991690632?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Espa%C3%A7o%20VIP%20Agro%20Pet." aria-label="Chamar no WhatsApp"><svg width="32" height="32" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.1.1.7-.1 1.3z"/></svg></a>
+<script>const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('ve');io.unobserve(x.target)}}),{threshold:.15});
+document.querySelectorAll('.sobe').forEach((el,i)=>{el.style.transitionDelay=(i%3)*80+'ms';io.observe(el)});</script>
 </body></html>
