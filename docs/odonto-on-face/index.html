@@ -1,103 +1,164 @@
-<!doctype html><html lang="pt-BR" style="--c:#0b6e8f;--e:#0a2f40"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Odonto On Face | Taguatinga - DF</title>
+<!doctype html><html lang="pt-BR" style="--c:#0e7490;--e:#06303b;--a:#5eead4;--s:#ecfaff;--r:6px;--fh:'Outfit';--ft:'DM Sans'"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Odonto On Face | Taguatinga - DF</title>
 <meta name="description" content="Consultório em Taguatinga com tratamentos de prevenção, estética e reabilitação. Agende sua avaliação pelo WhatsApp."><meta name="robots" content="noindex">
+<meta name="theme-color" content="#0e7490">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
-*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
-body{font:400 17px/1.6 Inter,system-ui,sans-serif;color:#1b2430;background:#fff;-webkit-font-smoothing:antialiased}
-h1,h2,h3,.logo{font-family:"Plus Jakarta Sans",Inter,sans-serif;line-height:1.15;letter-spacing:-.02em;color:#0f1722}
-img{display:block;max-width:100%;height:auto}a{color:inherit;text-decoration:none}
-.w{max-width:1160px;margin:auto;padding:0 24px}
-a:focus-visible{outline:3px solid var(--c);outline-offset:3px;border-radius:6px}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-weight:600;padding:14px 26px;border-radius:10px;transition:transform .15s,box-shadow .15s}
-.btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px -10px rgba(0,0,0,.35)}.btn:active{transform:none}
-.zap{background:#1fa855;color:#fff}.sec{background:#fff;color:#0f1722;border:1.5px solid #d5dbe3}.cor{background:var(--c);color:#fff}
-.faixa{background:var(--e);color:#dfe6ee;font-size:14px}.faixa .w{display:flex;justify-content:space-between;gap:16px;padding-top:8px;padding-bottom:8px}
-header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);border-bottom:1px solid #e8ecf1}
-header .w{display:flex;align-items:center;justify-content:space-between;height:72px;gap:24px}
-.logo{display:flex;align-items:center;gap:12px;font-weight:800;font-size:19px}
-.logo i{display:grid;place-items:center;flex:none;width:40px;height:40px;border-radius:10px;background:var(--c);color:#fff;font-style:normal;font-size:18px}
-nav{display:flex;gap:28px;font-weight:500;font-size:15.5px;color:#3c4858}nav a:hover{color:var(--c)}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth;overflow-x:clip}
+body{font:400 17px/1.65 var(--ft),system-ui,sans-serif;color:#1d2433;background:#fff;-webkit-font-smoothing:antialiased;overflow-x:clip}
+h1,h2,h3,.logo,.num{font-family:var(--fh),sans-serif;line-height:1.12;letter-spacing:-.02em;color:var(--e)}
+img{display:block;max-width:100%}a{color:inherit;text-decoration:none}.w{max-width:1180px;margin:auto;padding:0 24px}
+a:focus-visible{outline:3px solid var(--c);outline-offset:3px;border-radius:8px}
+[data-lucide]{width:1em;height:1em}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-weight:600;padding:15px 28px;border-radius:var(--r);transition:transform .2s,box-shadow .2s;position:relative;overflow:hidden}
+.btn:hover{transform:translateY(-3px);box-shadow:0 14px 30px -12px color-mix(in srgb,var(--c) 70%,#000)}
+.btn::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.35) 50%,transparent 70%);transform:translateX(-120%)}
+.btn:hover::after{transition:transform .7s;transform:translateX(120%)}
+.zap{background:#1fa855;color:#fff}.sec{background:#fff;color:var(--e);border:1.5px solid color-mix(in srgb,var(--e) 18%,#fff)}.cor{background:var(--c);color:#fff}
+.zap svg,.btn [data-lucide]{width:20px;height:20px}
+/* topo */
+header{position:fixed;inset:0 0 auto;z-index:40;transition:background .3s,box-shadow .3s,height .3s}
+header .w{display:flex;align-items:center;justify-content:space-between;height:78px;gap:24px;transition:height .3s}
+header.sol{background:rgba(255,255,255,.92);backdrop-filter:blur(10px);box-shadow:0 6px 24px -18px rgba(0,0,0,.5)}header.sol .w{height:64px}
+.logo{display:flex;align-items:center;gap:12px;font-weight:800;font-size:19px;color:var(--tl,var(--e))}header.sol .logo{color:var(--e)}
+.logo i{display:grid;place-items:center;flex:none;width:42px;height:42px;border-radius:calc(var(--r) + 2px);background:var(--c);color:#fff;font-style:normal;font-size:19px;transform:rotate(-6deg);box-shadow:4px 4px 0 var(--a)}
+nav{display:flex;gap:30px;font-weight:500;font-size:15.5px;color:var(--tl,#3c4858)}header.sol nav{color:#3c4858}
+nav a{position:relative}nav a::after{content:"";position:absolute;left:0;bottom:-4px;height:2px;width:100%;background:var(--c);transform:scaleX(0);transition:transform .25s;transform-origin:left}nav a:hover::after{transform:none}
 header .btn{padding:10px 18px;font-size:15px}
-.capa{background:linear-gradient(180deg,#f4f7fa,#fff)}.capa .w{display:grid;grid-template-columns:1.05fr 1fr;gap:56px;align-items:center;padding-top:72px;padding-bottom:88px}
-.local{display:inline-block;font-weight:600;font-size:14.5px;color:var(--c);background:color-mix(in srgb,var(--c) 10%,#fff);padding:6px 14px;border-radius:99px;margin-bottom:20px}
-h1{font-size:clamp(2.1rem,4.4vw,3.5rem);font-weight:800}.capa p{font-size:1.15rem;color:#4a5666;margin:20px 0 32px;max-width:34em}
+/* capa */
+.capa{position:relative;overflow:hidden;padding:150px 0 110px;background:var(--s)}
+.capa .w{position:relative;z-index:2}
+.bolha{position:absolute;border-radius:50%;filter:blur(2px);opacity:.55;animation:flut 14s ease-in-out infinite;z-index:1}
+.b1{width:420px;height:420px;background:color-mix(in srgb,var(--c) 22%,transparent);top:-120px;right:-80px}
+.b2{width:260px;height:260px;background:color-mix(in srgb,var(--a) 30%,transparent);bottom:-60px;left:-60px;animation-delay:-5s}
+@keyframes flut{50%{transform:translate(30px,-26px) scale(1.06)}}
+.local{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:14.5px;color:var(--c);background:#fff;padding:7px 16px;border-radius:99px;margin-bottom:22px;box-shadow:0 6px 18px -12px rgba(0,0,0,.4)}
+.local [data-lucide]{width:16px;height:16px}
+h1{font-size:clamp(2.3rem,4.8vw,3.9rem);font-weight:800}h1 em{font-style:normal;color:var(--c);position:relative;white-space:nowrap}
+h1 em::after{content:"";position:absolute;left:0;right:0;bottom:.06em;height:.28em;background:color-mix(in srgb,var(--a) 55%,transparent);z-index:-1;border-radius:4px;transform:scaleX(0);transform-origin:left;animation:sub 1s .8s forwards}
+@keyframes sub{to{transform:none}}
+.capa p.lead{font-size:1.15rem;color:#4a5466;margin:22px 0 34px;max-width:34em}
 .acoes{display:flex;flex-wrap:wrap;gap:14px}
-.nota{display:flex;align-items:center;gap:12px;margin-top:32px;font-size:15.5px;color:#4a5666}.nota b{color:#0f1722}.est{color:#f5a623;letter-spacing:2px;font-size:18px}
-.foto{position:relative}.foto img{border-radius:20px;aspect-ratio:5/4.4;object-fit:cover;width:100%;box-shadow:0 30px 60px -30px rgba(15,23,34,.45)}
-.selo{position:absolute;left:-24px;bottom:28px;background:#fff;border-radius:14px;padding:14px 18px;display:flex;gap:12px;align-items:center;box-shadow:0 16px 40px -16px rgba(15,23,34,.4);font-size:14.5px;line-height:1.35}
-.selo span{display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:#e7f7ee;color:#1fa855}.selo b{display:block;color:#0f1722}
-section{padding:96px 0}.cab{max-width:640px;margin:0 auto 56px;text-align:center}h2{font-size:clamp(1.8rem,3.2vw,2.5rem);font-weight:800}.cab p{color:#4a5666;margin-top:14px}
-.cinza{background:#f4f7fa}
-.grade{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.card{background:#fff;border:1px solid #e3e8ee;border-radius:16px;padding:28px;transition:transform .2s,box-shadow .2s,border-color .2s}
-.card:hover{transform:translateY(-4px);box-shadow:0 20px 40px -24px rgba(15,23,34,.35);border-color:var(--c)}
-.card i{display:grid;place-items:center;width:46px;height:46px;border-radius:12px;background:color-mix(in srgb,var(--c) 12%,#fff);color:var(--c);margin-bottom:18px}
-.card h3{font-size:1.15rem;font-weight:700;margin-bottom:8px}.card p{color:#4a5666;font-size:15.5px}
-.sobre .w{display:grid;grid-template-columns:1fr 1.05fr;gap:64px;align-items:center}.sobre img{border-radius:20px;aspect-ratio:4/3.3;object-fit:cover;width:100%}
-.sobre p{color:#4a5666;margin:16px 0 24px}.sobre ul{list-style:none;display:grid;gap:14px;margin-bottom:32px}.sobre li{display:flex;gap:12px;align-items:flex-start;font-weight:500}.sobre li svg{color:var(--c);flex:none;margin-top:3px}
-.aval{background:var(--e);color:#dfe6ee;text-align:center}.aval h2{color:#fff}.aval .num{font:800 clamp(4rem,9vw,6.5rem)/1 "Plus Jakarta Sans",sans-serif;color:#fff;margin-bottom:8px}
-.aval .est{font-size:30px;display:block;margin-bottom:18px}.aval p{max-width:34em;margin:14px auto 28px}
-.rola{overflow:hidden;margin:40px 0 36px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
-.trilho{display:flex;gap:20px;width:max-content;animation:rola var(--t,40s) linear infinite}.rola:hover .trilho,.rola:focus-within .trilho{animation-play-state:paused}
+.nota{display:flex;align-items:center;gap:14px;margin-top:34px;font-size:15px;color:#4a5466}.nota b{color:var(--e);font-size:17px}
+.est{color:#f5a623;letter-spacing:2px}
+.foto{position:relative}.foto .img{border-radius:28px;overflow:hidden;box-shadow:0 40px 70px -35px rgba(10,20,40,.55)}
+.foto img{width:100%;aspect-ratio:5/4.5;object-fit:cover;animation:zoom 18s ease-in-out infinite alternate}@keyframes zoom{to{transform:scale(1.08)}}
+.selo{position:absolute;background:#fff;border-radius:16px;padding:14px 18px;display:flex;gap:12px;align-items:center;box-shadow:0 18px 40px -18px rgba(10,20,40,.5);font-size:14px;line-height:1.35;animation:boia 5s ease-in-out infinite}
+.selo b{display:block;color:var(--e);font-size:15px}.selo span{display:grid;place-items:center;width:42px;height:42px;border-radius:12px;background:var(--s);color:var(--c)}
+.selo.s1{left:-28px;bottom:36px}.selo.s2{right:-20px;top:30px;animation-delay:-2.5s}
+@keyframes boia{50%{transform:translateY(-10px)}}
+.divida .w{display:grid;grid-template-columns:1.05fr 1fr;gap:64px;align-items:center}
+/* capa cheia: foto de fundo */
+.cheia{padding:190px 0 150px;background:var(--e)}.cheia .fundo{position:absolute;inset:0;z-index:0}
+.cheia .fundo img{width:100%;height:100%;object-fit:cover;animation:zoom 22s ease-in-out infinite alternate}
+.cheia .fundo::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,color-mix(in srgb,var(--e) 92%,transparent) 30%,color-mix(in srgb,var(--e) 35%,transparent))}
+.cheia h1{color:#fff;max-width:15ch}.cheia p.lead{color:#dfe6ef}.cheia .nota{color:#dfe6ef}.cheia .nota b{color:#fff}.cheia .sec{background:transparent;color:#fff;border-color:rgba(255,255,255,.5)}
+.cheia .bolha{display:none}.cheia .local{background:rgba(255,255,255,.14);color:#fff;backdrop-filter:blur(6px)}
+/* capa colagem */
+.colagem .w{display:grid;grid-template-columns:1fr 1.05fr;gap:56px;align-items:center}
+.mosaico{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:200px 200px;gap:16px;position:relative}
+.mosaico img{width:100%;height:100%;object-fit:cover;border-radius:22px;box-shadow:0 26px 50px -30px rgba(10,20,40,.6);transition:transform .4s}
+.mosaico img:hover{transform:scale(1.03) rotate(-1deg)}.mosaico .alto{grid-row:span 2}
+.colagem .selo.s1{left:-20px;bottom:-22px}
+/* números */
+.numeros{background:var(--e);color:#cfd8e3;padding:44px 0}.numeros .w{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:center}
+.numeros .num{font-size:2.4rem;font-weight:800;color:#fff}.numeros small{display:block;font-size:14.5px}
+/* seções */
+section{padding:110px 0;position:relative}.cab{max-width:660px;margin:0 auto 60px;text-align:center}
+.cab .tag{display:inline-block;font-weight:700;font-size:14px;color:var(--c);background:var(--s);padding:6px 14px;border-radius:99px;margin-bottom:14px}
+h2{font-size:clamp(1.9rem,3.4vw,2.8rem);font-weight:800}.cab p{color:#4a5466;margin-top:14px}
+.grade{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.card{background:#fff;border-radius:20px;padding:32px;position:relative;overflow:hidden;box-shadow:0 1px 0 rgba(0,0,0,.04),0 18px 40px -30px rgba(10,20,40,.4);transition:transform .3s,box-shadow .3s}
+.card::before{content:"";position:absolute;inset:auto 0 0;height:4px;background:linear-gradient(90deg,var(--c),var(--a));transform:scaleX(0);transform-origin:left;transition:transform .4s}
+.card:hover{transform:translateY(-8px);box-shadow:0 30px 50px -28px rgba(10,20,40,.45)}.card:hover::before{transform:none}
+.card .ic{display:grid;place-items:center;width:58px;height:58px;border-radius:16px;background:var(--s);color:var(--c);margin-bottom:20px;font-size:26px;transition:background .3s,color .3s,transform .3s}
+.card:hover .ic{background:var(--c);color:#fff;transform:rotate(-8deg) scale(1.05)}
+.card h3{font-size:1.2rem;margin-bottom:8px}.card p{color:#5a6475;font-size:15.5px}
+.card .mais{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-weight:600;font-size:15px;color:var(--c)}
+.claro{background:var(--s)}
+.onda{position:absolute;left:0;right:0;height:70px;width:100%;color:var(--s)}.onda.cima{top:-69px}
+/* por que */
+.porque .w{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+.porque .ft{position:relative}.porque .ft img{border-radius:28px;aspect-ratio:4/4.3;object-fit:cover;width:100%}
+.porque .ft::before{content:"";position:absolute;inset:24px -24px -24px 24px;border-radius:28px;background:var(--a);opacity:.35;z-index:-1}
+.itens{display:grid;gap:22px;margin:28px 0 36px}.item{display:flex;gap:16px}.item span{flex:none;display:grid;place-items:center;width:50px;height:50px;border-radius:14px;background:var(--s);color:var(--c);font-size:22px}
+.porque h2+p{margin-top:16px;color:#5a6475}.item b{display:block;color:var(--e);font-size:17px}.item p{color:#5a6475;font-size:15.5px}
+/* avaliações */
+.aval{background:var(--e);color:#cfd8e3;overflow:hidden}.aval h2{color:#fff}.aval .cab p{color:#cfd8e3}
+.aval .topo{display:flex;align-items:center;justify-content:center;gap:18px;margin-bottom:10px}.aval .num{font-size:4.5rem;color:#fff;line-height:1}.aval .est{font-size:26px;display:block}
+.rola{overflow:hidden;margin:16px 0 40px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent)}
+.trilho{display:flex;gap:22px;width:max-content;animation:rola var(--t,40s) linear infinite}.rola:hover .trilho{animation-play-state:paused}
 @keyframes rola{to{transform:translateX(-50%)}}
-.dep{width:340px;flex:none;background:#fff;color:#1b2430;border-radius:16px;padding:24px;text-align:left;font-size:15.5px;display:flex;flex-direction:column;gap:12px}
-.dep .est{font-size:16px;margin:0}.dep cite{font-style:normal;font-weight:600;color:#0f1722;margin-top:auto}
-@media (prefers-reduced-motion:reduce){.trilho{animation:none}.rola{overflow-x:auto}}
-@media (max-width:600px){.dep{width:280px}}
-.onde .w{display:grid;grid-template-columns:1fr 1.3fr;gap:40px;align-items:stretch}
-.info{background:#fff;border:1px solid #e3e8ee;border-radius:16px;padding:32px;display:grid;gap:22px;align-content:start}
-.info h3{font:700 14px Inter,sans-serif;text-transform:uppercase;letter-spacing:.06em;color:#6b7686;margin-bottom:4px}
-.info table{border-collapse:collapse;width:100%}.info td{padding:3px 0}.info td:last-child{text-align:right}
-iframe{width:100%;height:100%;min-height:420px;border:0;border-radius:16px}
-.cta{background:var(--c);color:#fff;text-align:center;padding:72px 0}.cta h2{color:#fff}.cta p{margin:12px auto 28px;opacity:.92;max-width:34em}.cta .btn{background:#fff;color:#0f1722}
-footer{background:#0d131b;color:#9aa5b3;padding:56px 0 28px;font-size:15px}footer .w{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px}
-footer .logo{color:#fff;margin-bottom:14px}footer h3{color:#fff;font:600 15px Inter,sans-serif;margin-bottom:12px;letter-spacing:0}footer a{display:block;margin:6px 0}footer a:hover{color:#fff}
-.fim{grid-column:1/-1;border-top:1px solid #1f2935;padding-top:22px;font-size:13.5px}
-.flut{position:fixed;right:18px;bottom:18px;width:58px;height:58px;border-radius:50%;background:#1fa855;color:#fff;display:none;place-items:center;box-shadow:0 10px 24px -8px rgba(0,0,0,.5);z-index:30}.flut svg{width:30px;height:30px}
-.js .ent{opacity:0;transform:translateY(22px);transition:opacity .6s,transform .6s}.js .ent.ve{opacity:1;transform:none}
-@media (prefers-reduced-motion:reduce){.js .ent{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
-@media (max-width:900px){nav,.faixa{display:none}.capa .w,.sobre .w,.onde .w{grid-template-columns:1fr;gap:36px}.capa .w{padding-top:40px;padding-bottom:56px}
-.grade{grid-template-columns:1fr 1fr}section{padding:64px 0}.selo{left:12px;bottom:12px}footer .w{grid-template-columns:1fr}.flut{display:grid}iframe{min-height:320px}}
-@media (max-width:600px){.grade{grid-template-columns:1fr}header .btn span{display:none}header .btn{padding:10px 12px}.logo{font-size:16px}.acoes .btn{width:100%}.w{padding:0 18px}}
+.dep{width:350px;flex:none;background:#fff;color:#1d2433;border-radius:20px;padding:26px;font-size:15.5px;display:flex;flex-direction:column;gap:12px;position:relative}
+.dep::before{content:"\201C";position:absolute;right:20px;top:-6px;font:700 80px/1 Georgia,serif;color:var(--s)}
+.dep .est{font-size:16px}.dep footer{display:flex;align-items:center;gap:10px;margin-top:auto;font-weight:600;color:var(--e)}
+.dep footer i{display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:var(--c);color:#fff;font-style:normal;font-size:15px}
+.aval .centro{text-align:center}.aval .sec{background:transparent;color:#fff;border-color:rgba(255,255,255,.4)}
+/* contato */
+.onde .w{display:grid;grid-template-columns:1fr 1.25fr;gap:40px;align-items:stretch}
+.info{background:#fff;border-radius:24px;padding:36px;display:grid;gap:22px;align-content:start;box-shadow:0 18px 40px -30px rgba(10,20,40,.4)}
+.linha{display:flex;gap:14px}.linha span{flex:none;display:grid;place-items:center;width:46px;height:46px;border-radius:14px;background:var(--s);color:var(--c);font-size:20px}
+.linha b{display:block;color:var(--e)}.linha p{color:#5a6475}
+iframe{width:100%;height:100%;min-height:440px;border:0;border-radius:24px}
+.cta{padding:0 0 110px}.cta .caixa{background:var(--c);border-radius:32px;padding:64px 48px;text-align:center;color:#fff;position:relative;overflow:hidden}
+.cta .caixa::before,.cta .caixa::after{content:"";position:absolute;border-radius:50%;background:rgba(255,255,255,.12);animation:flut 12s ease-in-out infinite}
+.cta .caixa::before{width:300px;height:300px;top:-140px;left:-80px}.cta .caixa::after{width:220px;height:220px;bottom:-110px;right:-40px;animation-delay:-6s}
+.cta h2{color:#fff;position:relative}.cta p{margin:14px auto 30px;opacity:.92;max-width:32em;position:relative}.cta .btn{background:#fff;color:var(--e)}
+.rodape{background:#0c111a;color:#94a0b0;padding:64px 0 30px;font-size:15px}.rodape .w{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:40px}
+.rodape .logo{color:#fff;margin-bottom:14px}.rodape h3{color:#fff;font-size:16px;margin-bottom:12px}.rodape a{display:block;margin:7px 0;transition:color .2s}.rodape a:hover{color:#fff}
+.fim{grid-column:1/-1;border-top:1px solid #1d2633;padding-top:22px;font-size:13.5px}
+.flut{position:fixed;right:20px;bottom:20px;width:62px;height:62px;border-radius:50%;background:#1fa855;color:#fff;display:grid;place-items:center;box-shadow:0 12px 26px -8px rgba(0,0,0,.5);z-index:50}
+.flut svg{width:32px;height:32px}.flut::before{content:"";position:absolute;inset:0;border-radius:50%;background:#1fa855;animation:pulso 2.2s ease-out infinite;z-index:-1}
+@keyframes pulso{to{transform:scale(1.7);opacity:0}}
+/* entradas */
+.js .ent{opacity:0;transform:translateY(34px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+.js .ent.esq{transform:translateX(-40px)}.js .ent.dir{transform:translateX(40px)}.js .ent.zoom{transform:scale(.92)}.js .ent.ve{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.js .ent{opacity:1;transform:none}html{scroll-behavior:auto}}
+@media (max-width:960px){nav{display:none}.divida .w,.colagem .w,.porque .w,.onde .w{grid-template-columns:1fr;gap:44px}
+.capa{padding:120px 0 80px}.cheia{padding:150px 0 100px}.grade{grid-template-columns:1fr 1fr}section{padding:80px 0}
+.numeros .w{grid-template-columns:1fr 1fr}.selo.s1{left:10px}.selo.s2{right:10px}.rodape .w{grid-template-columns:1fr}iframe{min-height:320px}.porque .ft::before{inset:16px -10px -16px 16px}}
+@media (max-width:600px){.grade{grid-template-columns:1fr}header .btn span{display:none}header .btn{padding:10px 12px}.logo{font-size:16px}.logo i{width:38px;height:38px}
+.acoes .btn{width:100%}.w{padding:0 18px}.mosaico{grid-template-rows:150px 150px}.dep{width:290px}.numeros .num{font-size:1.6rem}.numeros small{font-size:13px}.porque .ft::before{inset:12px 0 -12px 12px}.cta .caixa{padding:48px 24px;border-radius:24px}.selo.s2{display:none}}
 </style></head><body>
 <script>document.documentElement.classList.add('js')</script>
-<div class="faixa"><div class="w"><span>Área Especial 8, Hospital Anchieta, sala 105D, QNC 9/10 - Taguatinga Norte, Brasília - DF</span><a href="tel:+5561992433195">(61) 99243-3195</a></div></div>
-<header><div class="w"><a class="logo" href="#"><i>O</i>Odonto On Face</a><nav><a href="#servicos">Tratamentos</a><a href="#sobre">Sobre</a><a href="#contato">Contato</a></nav>
-<a class="btn zap" href="https://wa.me/5561992433195?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Odonto%20On%20Face%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.1.1.7-.1 1.3z"/></svg><span>WhatsApp</span></a></div></header>
-<main>
-<section class="capa" style="padding:0"><div class="w"><div class="ent">
-<span class="local">Taguatinga - DF</span>
-<h1>Seu sorriso bem cuidado, com atendimento próximo e hora marcada</h1>
-<p>Consultório em Taguatinga com tratamentos de prevenção, estética e reabilitação. Agende sua avaliação pelo WhatsApp.</p>
-<div class="acoes"><a class="btn zap" href="https://wa.me/5561992433195?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Odonto%20On%20Face%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.1.1.7-.1 1.3z"/></svg>Chamar no WhatsApp</a><a class="btn sec" href="#servicos">Ver tratamentos</a></div>
-</div>
-<div class="foto ent"><img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1100&h=970&fit=crop&q=72" width="1100" height="970" alt="">
-<div class="selo"><span><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.1.1.7-.1 1.3z"/></svg></span><div><b>Atendimento pelo WhatsApp</b>Tire dúvidas e agende</div></div></div>
-</div></section>
-<section id="servicos" class="cinza"><div class="w"><div class="cab ent"><h2>Tratamentos</h2><p>Conheça o que a Odonto On Face oferece. Para valores e horários, é só chamar.</p></div>
-<div class="grade"><article class="card ent"><i><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></i><h3>Limpeza e prevenção</h3><p>Profilaxia e orientação para manter dentes e gengiva saudáveis.</p></article><article class="card ent"><i><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></i><h3>Clareamento</h3><p>Técnicas seguras para um sorriso mais claro, com acompanhamento profissional.</p></article><article class="card ent"><i><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></i><h3>Restaurações</h3><p>Recuperação de dentes com materiais na cor natural do dente.</p></article><article class="card ent"><i><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></i><h3>Tratamento de canal</h3><p>Alívio da dor e preservação do dente, com conforto.</p></article><article class="card ent"><i><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></i><h3>Implantes</h3><p>Reposição de dentes com planejamento individual.</p></article><article class="card ent"><i><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></i><h3>Aparelho ortodôntico</h3><p>Alinhamento dos dentes com aparelhos fixos ou alinhadores.</p></article><article class="card ent"><i><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></i><h3>Avaliação</h3><p>Primeira consulta para entender o seu caso e explicar as opções.</p></article></div></div></section>
-<section id="sobre" class="sobre"><div class="w"><img class="ent" src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=1000&h=825&fit=crop&q=72" width="1000" height="825" alt="" loading="lazy">
-<div class="ent"><h2>Por que escolher a Odonto On Face</h2><p>Atendemos Taguatinga e região com atenção a cada detalhe, do primeiro contato ao pós-atendimento.</p>
-<ul><li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Atendimento com hora marcada</li><li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Explicação clara de cada etapa do tratamento</li><li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Ambiente preparado para o seu conforto</li></ul>
-<a class="btn cor" href="https://wa.me/5561992433195?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Odonto%20On%20Face%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.">Falar com a equipe</a></div></div></section>
-
-<section id="contato" class="onde cinza"><div class="w"><div class="info ent"><h2>Onde estamos</h2>
-<div><h3>Endereço</h3><p>Área Especial 8, Hospital Anchieta, sala 105D, QNC 9/10 - Taguatinga Norte, Brasília - DF</p></div>
-<div><h3>Horário</h3><p>Consulte os horários pelo WhatsApp.</p></div>
-<div><h3>Telefone</h3><p><a href="tel:+5561992433195">(61) 99243-3195</a></p></div>
-<div class="acoes"><a class="btn zap" href="https://wa.me/5561992433195?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Odonto%20On%20Face%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.1.1.7-.1 1.3z"/></svg>WhatsApp</a><a class="btn sec" href="https://www.google.com/maps/dir/?api=1&destination=Odonto%20On%20Face%2C%20%C3%81rea%20Especial%208%2C%20Hospital%20Anchieta%2C%20sala%20105D%2C%20QNC%209/10%20-%20Taguatinga%20Norte%2C%20Bras%C3%ADlia%20-%20DF">Como chegar</a></div></div>
-<iframe class="ent" loading="lazy" src="https://maps.google.com/maps?q=Odonto%20On%20Face%2C%20%C3%81rea%20Especial%208%2C%20Hospital%20Anchieta%2C%20sala%20105D%2C%20QNC%209/10%20-%20Taguatinga%20Norte%2C%20Bras%C3%ADlia%20-%20DF&output=embed" title="Mapa: Odonto On Face"></iframe></div></section>
-<section class="cta"><div class="w ent"><h2>Fale com a gente agora</h2><p>Respondemos pelo WhatsApp. Mande sua dúvida ou peça um horário.</p>
-<a class="btn" href="https://wa.me/5561992433195?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Odonto%20On%20Face%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.1.1.7-.1 1.3z"/></svg>Chamar no WhatsApp</a></div></section>
+<header id="topo"><div class="w"><a class="logo" href="#"><i>O</i>Odonto On Face</a><nav><a href="#servicos">Tratamentos</a><a href="#sobre">Sobre</a><a href="#avaliacoes">Avaliações</a><a href="#contato">Contato</a></nav>
+<a class="btn zap" href="https://wa.me/5561992433195?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Odonto%20On%20Face%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.1.1.7-.1 1.3z"/></svg><span>WhatsApp</span></a></div></header>
+<main><section class="capa colagem"><div class="bolha b1"></div><div class="bolha b2"></div><div class="w">
+<div class="mosaico ent zoom"><img class="alto" src="https://images.unsplash.com/photo-1588776813677-77aaf5595b83?w=700&h=900&fit=crop&q=75" alt=""><img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=600&h=420&fit=crop&q=75" alt=""><img src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=600&h=420&fit=crop&q=75" alt="" loading="lazy"><div class="selo s1"><span><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.1.1.7-.1 1.3z"/></svg></span><div><b>Atendimento rápido</b>pelo WhatsApp</div></div></div>
+<div class="ent dir"><span class="local"><i data-lucide="map-pin"></i>Taguatinga - DF</span>
+<h1>Seu sorriso bem cuidado, com <em>atendimento próximo</em></h1><p class="lead">Consultório em Taguatinga com tratamentos de prevenção, estética e reabilitação. Agende sua avaliação pelo WhatsApp.</p>
+<div class="acoes"><a class="btn zap" href="https://wa.me/5561992433195?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Odonto%20On%20Face%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.1.1.7-.1 1.3z"/></svg>Chamar no WhatsApp</a><a class="btn sec" href="#servicos">Ver tratamentos</a></div><div class="nota"><span class="est" aria-hidden="true">★★★★★</span><span><b>4,3</b> de nota no Google · 117 avaliações</span></div></div></div></section>
+<div class="numeros"><div class="w"><div class="ent"><div class="num" >4,3</div><small>nota no Google</small></div><div class="ent"><div class="num" data-conta='117'>117</div><small>avaliações de clientes</small></div><div class="ent"><div class="num" >Taguatinga</div><small>atendimento na região</small></div><div class="ent"><div class="num" >WhatsApp</div><small>resposta rápida</small></div></div></div>
+<section id="servicos" class="claro"><div class="w"><div class="cab ent"><span class="tag">Tratamentos</span><h2>Como podemos ajudar</h2>
+<p>Conheça o que a Odonto On Face oferece. Para valores e horários, é só chamar no WhatsApp.</p></div><div class="grade"><article class="card ent" style="transition-delay:0ms"><div class="ic"><i data-lucide="sparkles"></i></div><h3>Limpeza e prevenção</h3><p>Profilaxia e orientação para manter dentes e gengiva saudáveis.</p><a class="mais" href="https://wa.me/5561992433195?text=Ol%C3%A1%21%20Queria%20saber%20sobre%20Limpeza%20e%20preven%C3%A7%C3%A3o.">Saber mais <i data-lucide="arrow-right"></i></a></article><article class="card ent" style="transition-delay:90ms"><div class="ic"><i data-lucide="sun"></i></div><h3>Clareamento</h3><p>Técnicas seguras para um sorriso mais claro, com acompanhamento profissional.</p><a class="mais" href="https://wa.me/5561992433195?text=Ol%C3%A1%21%20Queria%20saber%20sobre%20Clareamento.">Saber mais <i data-lucide="arrow-right"></i></a></article><article class="card ent" style="transition-delay:180ms"><div class="ic"><i data-lucide="bone"></i></div><h3>Restaurações</h3><p>Recuperação de dentes com materiais na cor natural do dente.</p><a class="mais" href="https://wa.me/5561992433195?text=Ol%C3%A1%21%20Queria%20saber%20sobre%20Restaura%C3%A7%C3%B5es.">Saber mais <i data-lucide="arrow-right"></i></a></article><article class="card ent" style="transition-delay:0ms"><div class="ic"><i data-lucide="activity"></i></div><h3>Tratamento de canal</h3><p>Alívio da dor e preservação do dente, com conforto.</p><a class="mais" href="https://wa.me/5561992433195?text=Ol%C3%A1%21%20Queria%20saber%20sobre%20Tratamento%20de%20canal.">Saber mais <i data-lucide="arrow-right"></i></a></article><article class="card ent" style="transition-delay:90ms"><div class="ic"><i data-lucide="anchor"></i></div><h3>Implantes</h3><p>Reposição de dentes com planejamento individual.</p><a class="mais" href="https://wa.me/5561992433195?text=Ol%C3%A1%21%20Queria%20saber%20sobre%20Implantes.">Saber mais <i data-lucide="arrow-right"></i></a></article><article class="card ent" style="transition-delay:180ms"><div class="ic"><i data-lucide="smile"></i></div><h3>Aparelho ortodôntico</h3><p>Alinhamento dos dentes com aparelhos fixos ou alinhadores.</p><a class="mais" href="https://wa.me/5561992433195?text=Ol%C3%A1%21%20Queria%20saber%20sobre%20Aparelho%20ortod%C3%B4ntico.">Saber mais <i data-lucide="arrow-right"></i></a></article><article class="card ent" style="transition-delay:0ms"><div class="ic"><i data-lucide="clipboard-check"></i></div><h3>Avaliação</h3><p>Primeira consulta para entender o seu caso e explicar as opções.</p><a class="mais" href="https://wa.me/5561992433195?text=Ol%C3%A1%21%20Queria%20saber%20sobre%20Avalia%C3%A7%C3%A3o.">Saber mais <i data-lucide="arrow-right"></i></a></article></div></div></section>
+<section id="sobre" class="porque"><div class="w"><div class="ft ent esq"><img src="https://images.unsplash.com/photo-1606265752439-1f18756aa5fc?w=900&h=970&fit=crop&q=75" alt="" loading="lazy"></div>
+<div class="ent dir"><h2>Por que escolher a Odonto On Face</h2><p>Atendemos Taguatinga e região com atenção a cada detalhe, do primeiro contato ao pós-atendimento.</p>
+<div class="itens"><div class="item"><span><i data-lucide="calendar-check"></i></span><div><b>Hora marcada</b><p>Seu horário respeitado, sem longas esperas.</p></div></div><div class="item"><span><i data-lucide="message-square"></i></span><div><b>Tudo explicado</b><p>Cada etapa do tratamento conversada com você.</p></div></div><div class="item"><span><i data-lucide="armchair"></i></span><div><b>Conforto</b><p>Ambiente preparado para você se sentir tranquilo.</p></div></div></div><a class="btn cor" href="https://wa.me/5561992433195?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Odonto%20On%20Face%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.">Falar com a equipe <i data-lucide="arrow-right"></i></a></div></div></section>
+<section class="aval" id="avaliacoes"><div class="w"><div class="cab ent"><div class="topo"><div class="num">4,3</div>
+<div><span class="est" aria-hidden="true">★★★★★</span><span>117 avaliações no Google</span></div></div><h2>O que dizem nossos clientes</h2></div></div>
+<div class="rola"><div class="trilho" style="--t:27s"><figure class="dep"><span class="est" aria-hidden="true">★★★★★</span><blockquote>Mais uma vez, sendo muito bem recepcionado, ainda fico impressionado com a higiene e o atendimento prestados pela Doutora Luize. Parabéns, certamente indicarei aos meus familiares e amigos.</blockquote><footer><i>W</i>Werllon L.</footer></figure><figure class="dep"><span class="est" aria-hidden="true">★★★★★</span><blockquote>Gostaria de deixar registrado o excelente atendimento da Dra. Giovana. Foi a primeira vez que me senti tão bem acolhida em uma consulta odontológica, graças ao seu atendimento humanizado, cuidadoso e atencioso. …</blockquote><footer><i>D</i>Daianne A.</footer></figure><figure class="dep"><span class="est" aria-hidden="true">★★★★★</span><blockquote>Atendimento excelente! Sou paciente uns 2 anos, já fiz limpeza, canal e sempre fui bem atendida, dra. Luize é uma profissional que ama o que faz.</blockquote><footer><i>K</i>Ketlen A.</footer></figure><div aria-hidden="true" style="display:contents"><figure class="dep"><span class="est" aria-hidden="true">★★★★★</span><blockquote>Mais uma vez, sendo muito bem recepcionado, ainda fico impressionado com a higiene e o atendimento prestados pela Doutora Luize. Parabéns, certamente indicarei aos meus familiares e amigos.</blockquote><footer><i>W</i>Werllon L.</footer></figure><figure class="dep"><span class="est" aria-hidden="true">★★★★★</span><blockquote>Gostaria de deixar registrado o excelente atendimento da Dra. Giovana. Foi a primeira vez que me senti tão bem acolhida em uma consulta odontológica, graças ao seu atendimento humanizado, cuidadoso e atencioso. …</blockquote><footer><i>D</i>Daianne A.</footer></figure><figure class="dep"><span class="est" aria-hidden="true">★★★★★</span><blockquote>Atendimento excelente! Sou paciente uns 2 anos, já fiz limpeza, canal e sempre fui bem atendida, dra. Luize é uma profissional que ama o que faz.</blockquote><footer><i>K</i>Ketlen A.</footer></figure></div></div></div>
+<div class="w centro"><a class="btn sec" href="https://www.google.com/maps?cid=3539212470255397542" target="_blank" rel="noopener">Ver todas no Google <i data-lucide="external-link"></i></a></div></section>
+<section id="contato" class="onde claro"><svg class="onda cima" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true"><path fill="currentColor" d="M0 70V35C240 0 480 0 720 30s480 40 720 5v35z"/></svg><div class="w"><div class="info ent esq"><h2>Venha nos visitar</h2>
+<div class="linha"><span><i data-lucide="map-pin"></i></span><div><b>Endereço</b><p>Área Especial 8, Hospital Anchieta, sala 105D, QNC 9/10 - Taguatinga Norte, Brasília - DF</p></div></div>
+<div class="linha"><span><i data-lucide="clock"></i></span><div><b>Horário</b><p>Consulte pelo WhatsApp</p></div></div>
+<div class="linha"><span><i data-lucide="phone"></i></span><div><b>Telefone</b><p><a href="tel:+5561992433195">(61) 99243-3195</a></p></div></div>
+<div class="acoes"><a class="btn zap" href="https://wa.me/5561992433195?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Odonto%20On%20Face%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.1.1.7-.1 1.3z"/></svg>WhatsApp</a><a class="btn sec" href="https://www.google.com/maps/dir/?api=1&destination=Odonto%20On%20Face%2C%20%C3%81rea%20Especial%208%2C%20Hospital%20Anchieta%2C%20sala%20105D%2C%20QNC%209/10%20-%20Taguatinga%20Norte%2C%20Bras%C3%ADlia%20-%20DF"><i data-lucide="navigation"></i>Como chegar</a></div></div>
+<iframe class="ent dir" loading="lazy" src="https://maps.google.com/maps?q=Odonto%20On%20Face%2C%20%C3%81rea%20Especial%208%2C%20Hospital%20Anchieta%2C%20sala%20105D%2C%20QNC%209/10%20-%20Taguatinga%20Norte%2C%20Bras%C3%ADlia%20-%20DF&output=embed" title="Mapa: Odonto On Face"></iframe></div></section>
+<section class="cta claro"><div class="w"><div class="caixa ent zoom"><h2>Fale com a gente agora mesmo</h2><p>Mande sua dúvida ou peça um horário. Respondemos rapidinho pelo WhatsApp.</p>
+<a class="btn" href="https://wa.me/5561992433195?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Odonto%20On%20Face%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.1.1.7-.1 1.3z"/></svg>Chamar no WhatsApp</a></div></div></section>
 </main>
-<footer><div class="w"><div><div class="logo"><i>O</i>Odonto On Face</div><p>Consultório em Taguatinga com tratamentos de prevenção, estética e reabilitação. Agende sua avaliação pelo WhatsApp.</p></div>
-<div><h3>Navegação</h3><a href="#servicos">Tratamentos</a><a href="#sobre">Sobre</a><a href="#contato">Contato</a></div>
-<div><h3>Contato</h3><a href="https://wa.me/5561992433195?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Odonto%20On%20Face%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.">WhatsApp (61) 99243-3195</a><a href="#contato">Área Especial 8, Hospital Anchieta, sala 105D, QNC 9/10 - Taguatinga Norte, Brasília - DF</a></div>
+<footer class="rodape"><div class="w"><div><div class="logo"><i>O</i>Odonto On Face</div><p>Consultório em Taguatinga com tratamentos de prevenção, estética e reabilitação. Agende sua avaliação pelo WhatsApp.</p></div>
+<div><h3>Navegação</h3><a href="#servicos">Tratamentos</a><a href="#sobre">Sobre</a><a href="#avaliacoes">Avaliações</a><a href="#contato">Contato</a></div><div><h3>Contato</h3><a href="https://wa.me/5561992433195?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Odonto%20On%20Face%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.">WhatsApp (61) 99243-3195</a><a href="#contato">Área Especial 8, Hospital Anchieta, sala 105D, QNC 9/10 - Taguatinga Norte, Brasília - DF</a></div>
 <p class="fim">© 2026 Odonto On Face · Responsável técnico: CRO-DF (a informar) · Imagens ilustrativas</p></div></footer>
-<a class="flut" href="https://wa.me/5561992433195?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Odonto%20On%20Face%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." aria-label="Chamar no WhatsApp"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.1.1.7-.1 1.3z"/></svg></a>
-<script>const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('ve');io.unobserve(x.target)}}),{threshold:.12});
-document.querySelectorAll('.ent').forEach((el,i)=>{el.style.transitionDelay=(i%3)*70+'ms';io.observe(el)});</script>
+<a class="flut" href="https://wa.me/5561992433195?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Odonto%20On%20Face%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." aria-label="Chamar no WhatsApp"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.1.1.7-.1 1.3z"/></svg></a>
+<script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+<script>
+try{lucide.createIcons()}catch(_){}
+const h=document.getElementById('topo');addEventListener('scroll',()=>h.classList.toggle('sol',scrollY>30),{passive:true});
+const io=new IntersectionObserver(es=>es.forEach(x=>{if(!x.isIntersecting)return;x.target.classList.add('ve');io.unobserve(x.target);
+const n=x.target.querySelector('[data-conta]');if(n){const fim=+n.dataset.conta,t0=performance.now();
+(function f(t){const p=Math.min((t-t0)/1400,1);n.textContent=Math.round(fim*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(f)})(t0)}}),{threshold:.15});
+document.querySelectorAll('.ent').forEach(el=>io.observe(el));
+</script>
 </body></html>
