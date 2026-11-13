@@ -40,6 +40,13 @@ section{padding:96px 0}.cab{max-width:640px;margin:0 auto 56px;text-align:center
 .sobre p{color:#4a5666;margin:16px 0 24px}.sobre ul{list-style:none;display:grid;gap:14px;margin-bottom:32px}.sobre li{display:flex;gap:12px;align-items:flex-start;font-weight:500}.sobre li svg{color:var(--c);flex:none;margin-top:3px}
 .aval{background:var(--e);color:#dfe6ee;text-align:center}.aval h2{color:#fff}.aval .num{font:800 clamp(4rem,9vw,6.5rem)/1 "Plus Jakarta Sans",sans-serif;color:#fff;margin-bottom:8px}
 .aval .est{font-size:30px;display:block;margin-bottom:18px}.aval p{max-width:34em;margin:14px auto 28px}
+.rola{overflow:hidden;margin:40px 0 36px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.trilho{display:flex;gap:20px;width:max-content;animation:rola var(--t,40s) linear infinite}.rola:hover .trilho,.rola:focus-within .trilho{animation-play-state:paused}
+@keyframes rola{to{transform:translateX(-50%)}}
+.dep{width:340px;flex:none;background:#fff;color:#1b2430;border-radius:16px;padding:24px;text-align:left;font-size:15.5px;display:flex;flex-direction:column;gap:12px}
+.dep .est{font-size:16px;margin:0}.dep cite{font-style:normal;font-weight:600;color:#0f1722;margin-top:auto}
+@media (prefers-reduced-motion:reduce){.trilho{animation:none}.rola{overflow-x:auto}}
+@media (max-width:600px){.dep{width:280px}}
 .onde .w{display:grid;grid-template-columns:1fr 1.3fr;gap:40px;align-items:stretch}
 .info{background:#fff;border:1px solid #e3e8ee;border-radius:16px;padding:32px;display:grid;gap:22px;align-content:start}
 .info h3{font:700 14px Inter,sans-serif;text-transform:uppercase;letter-spacing:.06em;color:#6b7686;margin-bottom:4px}
@@ -79,7 +86,8 @@ footer .logo{color:#fff;margin-bottom:14px}footer h3{color:#fff;font:600 15px In
 <section class="aval" id="avaliacoes"><div class="w ent">
 <div class="num">4,7</div><span class="est" aria-hidden="true">★★★★★</span>
 <h2>Nota no Google, com 340 avaliações</h2>
-<p>Quem conhece, recomenda. Veja o que os clientes dizem sobre o nosso atendimento.</p>
+<p>Quem conhece, recomenda. Veja o que os clientes dizem sobre o nosso atendimento.</p></div>
+<div class="rola" style="--t:36s"><div class="trilho"><figure class="dep"><span class="est" aria-hidden="true">★★★★★</span><blockquote>Ótimo atendimento ótimos preços entrega rápida tem de tudo que você procurar então gostei bastante quem estiver procurando algo assim não deixe de conferir e de virar cliente pois gostei muito deste local.</blockquote><cite>Ernane C.</cite></figure><figure class="dep"><span class="est" aria-hidden="true">★★★★★</span><blockquote>Ótimo atendimento e grande variedade de produtos. Bom preço.</blockquote><cite>Jéssica V.</cite></figure><figure class="dep"><span class="est" aria-hidden="true">★★★★★</span><blockquote>Ótimo atendimento, produtos de qualidade. Recomendo.</blockquote><cite>Johny M.</cite></figure><figure class="dep"><span class="est" aria-hidden="true">★★★★★</span><blockquote>Atendimento ótimo, preço é bom e condizente com os produtos, recomendo pois tem variedade de marcas de ração para cães</blockquote><cite>Sandro B.</cite></figure><div aria-hidden="true" style="display:contents"><figure class="dep"><span class="est" aria-hidden="true">★★★★★</span><blockquote>Ótimo atendimento ótimos preços entrega rápida tem de tudo que você procurar então gostei bastante quem estiver procurando algo assim não deixe de conferir e de virar cliente pois gostei muito deste local.</blockquote><cite>Ernane C.</cite></figure><figure class="dep"><span class="est" aria-hidden="true">★★★★★</span><blockquote>Ótimo atendimento e grande variedade de produtos. Bom preço.</blockquote><cite>Jéssica V.</cite></figure><figure class="dep"><span class="est" aria-hidden="true">★★★★★</span><blockquote>Ótimo atendimento, produtos de qualidade. Recomendo.</blockquote><cite>Johny M.</cite></figure><figure class="dep"><span class="est" aria-hidden="true">★★★★★</span><blockquote>Atendimento ótimo, preço é bom e condizente com os produtos, recomendo pois tem variedade de marcas de ração para cães</blockquote><cite>Sandro B.</cite></figure></div></div></div><div class="w">
 <a class="btn sec" href="https://www.google.com/maps/search/?api=1&query=Agrocastro%2C%20St.%20M%20Lojas%2005%20/%2006%20-%20Ceil%C3%A2ndia%2C%20Bras%C3%ADlia%20-%20DF%2C%2072215-561">Ver avaliações no Google</a></div></section>
 <section id="contato" class="onde cinza"><div class="w"><div class="info ent"><h2>Onde estamos</h2>
 <div><h3>Endereço</h3><p>St. M Lojas 05 / 06 - Ceilândia, Brasília - DF, 72215-561</p></div>
